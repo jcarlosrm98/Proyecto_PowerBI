@@ -19,3 +19,4 @@ Librerías utilizadas en Python:
 ## Uso y funcionamiento
 
 Para poder visualizar los dashboards, es necesario que se abra el archivo .pbix desde PowerBI Desktop.
+Además se incluye una imagen donde se puede observar el modelo de datos que poseen las tablas entre sí.
