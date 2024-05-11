@@ -16,7 +16,7 @@ Librerías utilizadas en Python:
 3. "Seaborn" para generar gráficos para el EDA.
 4. "MatplotLib" para complementar los gráficos de "Seaborn".
 
-## Uso y funcionamiento
+## Use and operation
 
 Para poder visualizar los dashboards, es necesario que se abra el archivo .pbix desde PowerBI Desktop.
 Además se incluye una imagen donde se puede observar el modelo de datos que poseen las tablas entre sí.
