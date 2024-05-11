@@ -1,4 +1,4 @@
-# Proyecto PowerBI.
+# Proyecto PowerBI
 En este repositorio encontrarás un datasets con diversas tablas para una compañía de petróleo. 
 Los datos han sido generados ficticiamente utilizando una librería de Python.
 El tratamiento de los datos ha sido generado en Python utilizando Pandas, así como para realizar un EDA.
