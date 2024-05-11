@@ -1,0 +1,76 @@
+Table customers {
+    Customer_ID uuid [pk]
+    Customer_Name text
+    Address text
+    City text
+    State text
+    Postal_Code text
+    Phone_Number text
+}
+
+Table suppliers {
+    Supplier_ID uuid [pk]
+    Supplier_Name text
+    Address text
+    City text
+    State text
+    Postal_Code text
+    Phone_Number text
+}
+
+Table products {
+    Product_ID uuid [pk]
+    Product_Name text
+    Product_Description text
+    Unit_Price float
+}
+
+Table orders {
+    Order_ID uuid [pk]
+    Customer_ID uuid [ref: > customers.Customer_ID]
+    Order_Date datetime
+    Product_ID uuid [ref: > products.Product_ID]
+    Quantity int
+    Total_Amount float
+}
+
+Table inventory {
+    Inventory_ID uuid [pk]
+    Product_ID uuid [ref: > products.Product_ID]
+    Quantity_Available int
+    Last_Updated datetime
+}
+
+Table shipments {
+    Shipment_ID uuid [pk]
+    Supplier_ID uuid [ref: > suppliers.Supplier_ID]
+    Product_ID uuid [ref: > products.Product_ID]
+    Shipment_Date datetime
+    Quantity_Shipped int
+}
+
+Table employees {
+    Employee_ID uuid [pk]
+    Employee_Name text
+    Position text
+    Salary float
+    Hire_Date datetime
+}
+
+Table departments {
+    Department_ID uuid [pk]
+    Department_Name text
+    Manager_ID uuid [ref: > employees.Employee_ID]
+}
+
+Table employee_department {
+    Employee_ID uuid [ref: > employees.Employee_ID]
+    Department_ID uuid [ref: > departments.Department_ID]
+    Start_Date datetime
+}
+
+Table revenue {
+    Revenue_ID uuid [pk]
+    Month_Year text
+    Total_Revenue float
+}
