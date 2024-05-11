@@ -6,7 +6,7 @@ En el repositorio se encuentra también un archivo de PowerBI donde se puede obs
 ## Status
 Ironhack Data Analytics Project. Beta version.
 
-## Technology stack.
+## Technology stack
 
 Este proyecto ha sido generado en Python y en PowerBI:
 Librerías utilizadas en Python:
@@ -16,12 +16,12 @@ Librerías utilizadas en Python:
 3. "Seaborn" para generar gráficos para el EDA.
 4. "MatplotLib" para complementar los gráficos de "Seaborn".
 
-## Uso y funcionamiento.
+## Uso y funcionamiento
 
 Para poder visualizar los dashboards, es necesario que se abra el archivo .pbix desde PowerBI Desktop.
 Además se incluye una imagen donde se puede observar el modelo de datos que poseen las tablas entre sí.
 
-## Architecture.
+## Architecture
 
 La arquitectura utilizada es la siguiente.
 
